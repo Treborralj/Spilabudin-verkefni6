@@ -144,7 +144,10 @@ html {
   background-color: var(--color-background-secondary);
   font-size: 1rem;
   text-decoration: none;
-  transition: background-color var(--transition-time-short) var(--transition-timing-function), color var(--transition-time-short) var(--transition-timing-function), border-color var(--transition-time-short) var(--transition-timing-function);
+  transition: background-color var(--transition-time-short)
+      var(--transition-timing-function),
+    color var(--transition-time-short) var(--transition-timing-function),
+    border-color var(--transition-time-short) var(--transition-timing-function);
 }
 
 .button:hover {
@@ -169,7 +172,8 @@ html {
 
 header,
 .wrapper {
-  animation: var(--transition-time-long) var(--transition-timing-function) fade-in;
+  animation: var(--transition-time-long) var(--transition-timing-function)
+    fade-in;
 }
 
 /**
@@ -456,7 +460,7 @@ table tr td:last-child {
   border-bottom-right-radius: var(--border-radius-regular);
 }
 
-table tbody tr:nth-child(2n+1) {
+table tbody tr:nth-child(2n + 1) {
   background-color: var(--color-background-secondary);
 }
 
@@ -514,7 +518,7 @@ fieldset textarea {
   background-color: var(--color-background-form);
 }
 
-fieldset input[type=checkbox] {
+fieldset input[type="checkbox"] {
   display: inline-block;
   margin-right: calc(var(--spacing) * 0.5);
   width: auto;
